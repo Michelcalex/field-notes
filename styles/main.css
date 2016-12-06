@@ -1,3 +1,8 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase; }
 
+li {
+  list-style-type: none; }
 
 /*# sourceMappingURL=main.css.map */
