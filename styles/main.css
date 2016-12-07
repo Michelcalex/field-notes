@@ -1370,6 +1370,10 @@ header {
         padding-right: 0.9375rem; } }
     header #right-header:last-child:not(:first-child) {
       float: right; }
+    header #right-header span {
+      font-weight: bold;
+      font-size: 0.8em;
+      padding-left: 7px; }
 
 #hero {
   max-width: 100%;
@@ -1459,7 +1463,7 @@ header {
     #content .merchandise::after {
       clear: both; }
     #content .merchandise .items {
-      width: 25%;
+      width: 50%;
       float: left;
       padding-left: 0.625rem;
       padding-right: 0.625rem;
@@ -1470,10 +1474,26 @@ header {
           padding-right: 0.9375rem; } }
       #content .merchandise .items:last-child:not(:first-child) {
         float: right; }
+      @media screen and (min-width: 50em) {
+        #content .merchandise .items {
+          width: 25%;
+          float: left;
+          padding-left: 0.625rem;
+          padding-right: 0.625rem; } }
+  @media screen and (min-width: 50em) and (min-width: 40em) {
+    #content .merchandise .items {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+      @media screen and (min-width: 50em) {
+          #content .merchandise .items:last-child:not(:first-child) {
+            float: right; } }
 
 footer {
-  background-color: #AEA288;
+  background-color: #ccbfa5;
   padding: 40px; }
+  @media screen and (min-width: 50em) {
+    footer {
+      background-color: #AEA288; } }
   footer .footer-row-one {
     max-width: 100%;
     margin-left: auto;
@@ -1523,13 +1543,17 @@ footer {
       width: 33.33333%;
       float: left;
       padding-left: 0.625rem;
-      padding-right: 0.625rem; }
+      padding-right: 0.625rem;
+      font-size: 0.8em; }
       @media screen and (min-width: 40em) {
         footer .footer-row-two .nav-bottom {
           padding-left: 0.9375rem;
           padding-right: 0.9375rem; } }
       footer .footer-row-two .nav-bottom:last-child:not(:first-child) {
         float: right; }
+      footer .footer-row-two .nav-bottom ul {
+        display: inline-block;
+        font-weight: bold; }
     footer .footer-row-two h4 {
       width: 33.33333%;
       float: left;
@@ -1555,7 +1579,9 @@ footer {
       footer .footer-row-two #the-list:last-child:not(:first-child) {
         float: right; }
       footer .footer-row-two #the-list p {
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        font-size: 0.65em;
+        font-weight: bold; }
   footer .footer-row-three {
     width: 100%;
     float: left;
@@ -1607,6 +1633,8 @@ footer {
           padding-right: 0.9375rem; } }
       footer .footer-row-four .footer-center:last-child:not(:first-child) {
         float: right; }
+      footer .footer-row-four .footer-center span {
+        margin-left: 7px; }
     footer .footer-row-four .footer-right {
       width: 33.33333%;
       float: left;

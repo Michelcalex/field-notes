@@ -26,9 +26,12 @@
             background-color: $primary-bg-color;
 
             .items {
-                @include grid-column(3);
+                @include grid-column(6);
                 border-top: 1px solid lightgrey;
 
+                @include breakpoint(800px) {
+                    @include grid-column(3);
+                }
             }
     }
 }

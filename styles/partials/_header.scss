@@ -30,7 +30,7 @@ header {
 
                 li {
                     display: inline-block;
-                    font-weight: $font-weight;
+                    font-weight: $primary-font-weight;
                     font-size: 0.9em;
                     letter-spacing: 1px;
                     padding: 0px 19px;
@@ -46,6 +46,12 @@ header {
     #right-header {
         @include grid-column(3);
         margin-top: 20px;
+
+        span {
+            font-weight: $primary-font-weight;
+            font-size: $medium-font;
+            padding-left: 7px;
+        }
     }
 
 

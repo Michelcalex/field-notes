@@ -1,6 +1,10 @@
 footer {
-    background-color: $secondary-bg-color;
+    background-color: #ccbfa5; 
     padding: 40px;
+
+    @include breakpoint(800px) {
+        background-color: $secondary-bg-color;
+    }
 
     .footer-row-one {
         @include grid-row();
@@ -25,9 +29,15 @@ footer {
 
     .footer-row-two {
         @include grid-row();
-
+        
         .nav-bottom {
-            @include grid-column(4)
+            @include grid-column(4);
+            font-size: $medium-font;
+
+            ul {
+                display: inline-block;
+                font-weight: $primary-font-weight;
+            }
         }
 
         h4 {
@@ -41,6 +51,8 @@ footer {
 
             p {
                 text-transform: capitalize;
+                font-size: $small-font;
+                font-weight: $primary-font-weight;
             }
             
         }
@@ -58,8 +70,8 @@ footer {
     .footer-row-four {
         @include grid-row();
         border-top: 1px solid black;
-        font-size: 0.65em;
-        font-weight: bold;
+        font-size: $small-font;
+        font-weight: $primary-font-weight;
 
         .footer-left {
             @include grid-column(4);
@@ -71,6 +83,10 @@ footer {
             @include grid-column(4);
             color: $primary-txt-color;
             text-align: center;
+
+            span {
+                margin-left: 7px;
+            }
         }
 
         .footer-right {
