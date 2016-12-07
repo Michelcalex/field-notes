@@ -1,0 +1,55 @@
+header {
+    @include grid-row();
+    background-color: $primary-bg-color;
+    margin: 0px;
+    max-width: 100%;
+    text-align: center;
+
+    h5 {
+        @include grid-column(3);
+        margin-top: 20px;
+        color: $tertiary-txt-color;
+    }
+
+    #center-header {
+        @include grid-column(6);
+        text-align: center;
+
+        h1 {
+            color: $primary-txt-color;
+            display: block;
+            letter-spacing: 2px;
+            margin: 5px 0px 0px;
+        }
+
+        nav {
+            color: $secondary-txt-color;
+
+            ul {
+                padding-left: 0px;
+
+                li {
+                    display: inline-block;
+                    font-weight: $font-weight;
+                    font-size: 0.9em;
+                    letter-spacing: 1px;
+                    padding: 0px 19px;
+
+                    .products {
+                        color: $primary-txt-color;
+                    }
+                }
+            }
+        }
+    }
+
+    #right-header {
+        @include grid-column(3);
+        margin-top: 20px;
+    }
+
+
+}
+
+
+

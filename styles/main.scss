@@ -1,14 +1,36 @@
+@import '../node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+$grid-column-count: 12;
+$grid-row-width: 100%;
+$primary-bg-color: white;
+$highlight-txt-color: white;
+$primary-txt-color: #302e2a;
+$secondary-txt-color: #AEA288;
+$tertiary-txt-color: #9C3e14;
+$font-weight: bold;
+
+
+
 html {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 li {
     list-style-type: none;
 }
 
-$primary-bg-color: white;
-$highlight-txt-color: white;
-$primary-txt-color: #302e2a;
-$secondary-txt-color: #AEA288;
-$tertiary-txt-color: #9C3e14;
+h5 {
+    font-size: 0.75em;
+}
+
+
+
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/content';

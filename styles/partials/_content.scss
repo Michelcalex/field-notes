@@ -1,0 +1,18 @@
+#content {
+    @include grid-row();
+
+    .sub-heading {
+        @include grid-column(12);
+        text-align: center;
+
+        h2 {
+        color: $primary-txt-color; 
+        }
+
+        h3 {
+            color: $secondary-txt-color;
+        }
+
+    }
+}
+

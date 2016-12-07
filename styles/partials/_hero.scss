@@ -1,0 +1,33 @@
+#hero {
+    @include grid-row;
+
+    .blackice {
+        @include grid-column(12);
+        padding: 0px !important;
+    }
+
+    .lunacy {
+        @include grid-column(8);
+        padding: 0px !important;
+    }
+
+    .deboss {
+        @include grid-column(4);
+        padding: 0px !important;
+    }
+
+
+  
+}
+
+
+
+
+
+
+
+// ../assets/blackice_hero.jpg
+
+// ../assets/B_shop_deboss.jpg
+
+// ../assets/lunacy_AB.jpg
