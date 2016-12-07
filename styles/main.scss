@@ -6,6 +6,7 @@
 $grid-column-count: 12;
 $grid-row-width: 100%;
 $primary-bg-color: white;
+$secondary-bg-color: #AEA288;
 $highlight-txt-color: white;
 $primary-txt-color: #302e2a;
 $secondary-txt-color: #AEA288;
@@ -29,8 +30,12 @@ h5 {
     font-size: 0.75em;
 }
 
+.fa {
+    color: $tertiary-txt-color;
+}
 
 
 @import 'partials/header';
 @import 'partials/hero';
 @import 'partials/content';
+@import 'partials/footer';

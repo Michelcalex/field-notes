@@ -1,0 +1,82 @@
+footer {
+    background-color: $secondary-bg-color;
+    padding: 40px;
+
+    .footer-row-one {
+        @include grid-row();
+
+        h4 {
+            @include grid-column(4);
+        }
+
+        .left-align {
+            text-align: left;
+        }
+
+        .right-align {
+            text-align: right;
+        }
+
+        h1 {
+            @include grid-column(4);
+            text-align: center;
+        }
+    }
+
+    .footer-row-two {
+        @include grid-row();
+
+        .nav-bottom {
+            @include grid-column(4)
+        }
+
+        h4 {
+            @include grid-column(4);
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        #the-list {
+            @include grid-column(4);
+
+            p {
+                text-transform: capitalize;
+            }
+            
+        }
+
+    }
+
+    .footer-row-three {
+        @include grid-column(12);
+
+        .fa {
+            padding: 20px 20px 20px 0px !important;
+        }
+    }
+
+    .footer-row-four {
+        @include grid-row();
+        border-top: 1px solid black;
+        font-size: 0.65em;
+        font-weight: bold;
+
+        .footer-left {
+            @include grid-column(4);
+            color: $primary-txt-color;
+            text-align: left;
+        }
+
+        .footer-center {
+            @include grid-column(4);
+            color: $primary-txt-color;
+            text-align: center;
+        }
+
+        .footer-right {
+            @include grid-column(4);
+            color: $primary-txt-color;
+            text-align: right;
+        }
+    }
+}
